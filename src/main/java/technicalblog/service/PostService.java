@@ -31,6 +31,23 @@ public class PostService {
 
         return posts;
 
+
     }
+
+    public ArrayList<Post> getOnePost()
+    {
+        ArrayList<Post> posts = new ArrayList<>();
+
+        Post post1 = new Post();
+        post1.setTitle("This is your first post");
+        post1.setBody("I am Post  first");
+        post1.setDate(new Date());
+
+        posts.add(post1);
+
+        return  posts;
+
+    }
+
 }
 
